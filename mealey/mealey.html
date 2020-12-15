@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mealey Machine</title>
+    <link rel="stylesheet" type="text/css" href="mealey.css">
+    <script src="mealey.js"></script>
+</head>
+<body>
+    <div class="main">
+        <center><img class="img" src= "mealey_img.png" alt=""></center>
+
+        <input class = "input" placeholder="Search word" type="text" name="inputString" id="search">
+        <input class = "input" placeholder="State Alphabet"  type="text" name="state" id="state">
+        <input class = "input" placeholder="Transition Alphabet"  type="text" name="output" id="transition">
+
+        <br>
+
+        <button id ="confirm" onclick="add()">Confirm</button>
+        <button id = "calculate" onclick="mealeyCalc();">Run</button>
+        <button onclick="del()">Clear</button>
+
+        <div id="tablediv"></div>
+
+        <div class="collectivediv" id="resultdiv"></div>
+        <div class="collectivediv" id="outputdiv"></div>
+    </div>
+    
+    <div id="myDynamicTable"></div>
+
+</body>
+</html>
